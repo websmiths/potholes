@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T08:30:26.745Z",
-  "total": 6,
+  "generatedAt": "2026-05-05T08:33:37.122Z",
+  "total": 7,
   "byRole": {
     "resident": 6,
-    "local": 0,
+    "local": 1,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 6
+    "2026-05": 7
   },
   "publicNames": [
+    {
+      "name": "Rick U.",
+      "role": "local",
+      "suburb": "Repentance Creek 2480",
+      "at": "2026-05-05T08:33:27.105Z"
+    },
     {
       "name": "Gary W.",
       "role": "resident",

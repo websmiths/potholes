@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T21:47:33.674Z",
-  "total": 22,
+  "generatedAt": "2026-05-05T22:49:54.225Z",
+  "total": 23,
   "byRole": {
     "resident": 19,
     "local": 3,
-    "commuter": 0,
+    "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 22
+    "2026-05": 23
   },
   "publicNames": [
+    {
+      "name": "Annette M.",
+      "role": "commuter",
+      "suburb": "2560",
+      "at": "2026-05-05T22:49:40.831Z"
+    },
     {
       "name": "Billy J.",
       "role": "resident",

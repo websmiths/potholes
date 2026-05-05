@@ -1,6 +1,11 @@
 // Fix Fox Road — gallery + petition app.
 // No build step, no dependencies. Reads manifest.json + config.json.
 
+// All dates and times shown on the site are rendered in the road's local
+// timezone so visitors anywhere see the same calendar dates and clock
+// times that residents experience.
+const SITE_TZ = "Australia/Sydney";
+
 (async function () {
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
@@ -196,10 +201,12 @@
     const m = s.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.\d+)?(Z|[+-]\d{2}:?\d{2})?/);
     if (!m) return null;
     const [, y, mo, d, hh, mm, ss, tz] = m;
+    // No tz info (e.g. photo EXIF taken in Sydney): trust the literal date.
     if (!tz) return `${y}-${mo}-${d}`;
+    // tz-aware: convert the moment-in-time to its calendar date in SITE_TZ.
     const dt = new Date(`${y}-${mo}-${d}T${hh}:${mm}:${ss}${normTz(tz)}`);
     if (isNaN(dt)) return `${y}-${mo}-${d}`;
-    return dt.toLocaleDateString("en-CA"); // YYYY-MM-DD
+    return dt.toLocaleDateString("en-CA", { timeZone: SITE_TZ }); // YYYY-MM-DD
   }
 
   function normTz(tz) {
@@ -215,6 +222,19 @@
     if (!m) return s;
     const [, y, mo, d, hh, mm, _ss, tz] = m;
     if (opts.dateOnly) {
+      if (tz) {
+        // Convert the moment-in-time to its calendar date in SITE_TZ.
+        const dt = new Date(`${y}-${mo}-${d}T${hh || "12"}:${mm || "00"}:00${normTz(tz)}`);
+        if (!isNaN(dt))
+          return dt.toLocaleDateString(undefined, {
+            timeZone: SITE_TZ,
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+      }
+      // No tz info — trust the literal date.
       return new Date(`${y}-${mo}-${d}T00:00:00`).toLocaleDateString(undefined, {
         weekday: "long",
         year: "numeric",
@@ -223,14 +243,16 @@
       });
     }
     if (opts.timeOnly && hh) {
-      // Construct a date in local-tz semantics: prefer using offset if present.
-      const iso = tz ? `${y}-${mo}-${d}T${hh}:${mm}:00${normTz(tz)}` : `${y}-${mo}-${d}T${hh}:${mm}:00`;
-      const dt = new Date(iso);
-      if (!isNaN(dt))
-        return dt.toLocaleTimeString(undefined, {
-          hour: "numeric",
-          minute: "2-digit",
-        });
+      if (tz) {
+        const dt = new Date(`${y}-${mo}-${d}T${hh}:${mm}:00${normTz(tz)}`);
+        if (!isNaN(dt))
+          return dt.toLocaleTimeString(undefined, {
+            timeZone: SITE_TZ,
+            hour: "numeric",
+            minute: "2-digit",
+          });
+      }
+      // No tz info (photo EXIF, treated as Sydney): show the literal time.
       return `${hh}:${mm}`;
     }
     return s;

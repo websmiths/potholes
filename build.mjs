@@ -16,7 +16,7 @@ import {
   writeFileSync,
 } from "node:fs";
 import { extname, join, basename } from "node:path";
-import { runAdd, runImport, runStats } from "./petition.mjs";
+import { runAdd, runImport, runStats, toLocalIso } from "./petition.mjs";
 
 const ROOT = new URL(".", import.meta.url).pathname;
 const SRC = join(ROOT, "artwork");
@@ -327,7 +327,7 @@ for (const dir of Object.values(DIRS)) {
 if (pruned) console.log(`pruned ${pruned} orphan(s)`);
 
 const manifest = {
-  generatedAt: new Date().toISOString(),
+  generatedAt: toLocalIso(),
   count: items.length,
   items,
 };

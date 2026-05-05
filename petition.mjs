@@ -290,7 +290,7 @@ export function runImport(csvPath, submissionsDir) {
     const story = pickField(row, "story", "your story", "comment");
     const submittedAt =
       pickField(row, "Submitted At", "submittedAt", "created", "timestamp") ||
-      new Date().toISOString();
+      toLocalIso();
     const displayPublicly = asBool(
       pickField(
         row,
@@ -456,7 +456,7 @@ export function runStats(submissionsDir, statsPath, hashesPath) {
   publicStories.sort((a, b) => String(b.at).localeCompare(String(a.at)));
 
   const stats = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: toLocalIso(),
     total: subs.length,
     byRole,
     byMonth,

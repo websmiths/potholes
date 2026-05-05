@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T08:18:48.245Z",
-  "total": 3,
+  "generatedAt": "2026-05-05T08:24:48.787Z",
+  "total": 4,
   "byRole": {
-    "resident": 3,
+    "resident": 4,
     "local": 0,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 3
+    "2026-05": 4
   },
   "publicNames": [
+    {
+      "name": "julien P.",
+      "role": "resident",
+      "suburb": "Rosebank",
+      "at": "2026-05-05T08:24:25.625Z"
+    },
     {
       "name": "Julian S.",
       "role": "resident",
@@ -20,6 +26,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "julien P.",
+      "role": "resident",
+      "suburb": "Rosebank",
+      "at": "2026-05-05T08:24:25.625Z",
+      "body": "Every day driving  over the large potholes has caused damage to my vehicles and trailers and is an accident waiting to happen"
+    },
     {
       "name": "Julian S.",
       "role": "resident",

@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T20:09:11.747Z",
-  "total": 19,
+  "generatedAt": "2026-05-05T20:14:57.817Z",
+  "total": 20,
   "byRole": {
-    "resident": 16,
+    "resident": 17,
     "local": 3,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 19
+    "2026-05": 20
   },
   "publicNames": [
+    {
+      "name": "Jason B.",
+      "role": "resident",
+      "suburb": "2480",
+      "at": "2026-05-05T20:14:45.832Z"
+    },
     {
       "name": "Alicia H.",
       "role": "resident",
@@ -110,6 +116,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Jason B.",
+      "role": "resident",
+      "suburb": "2480",
+      "at": "2026-05-05T20:14:45.832Z",
+      "body": "Several near misses \r\nDamage to vehicle \r\nDaily anxiety re access to our property"
+    },
     {
       "name": "Alicia H.",
       "role": "resident",

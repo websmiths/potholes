@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T20:55:06.958Z",
-  "total": 21,
+  "generatedAt": "2026-05-05T21:47:33.674Z",
+  "total": 22,
   "byRole": {
-    "resident": 18,
+    "resident": 19,
     "local": 3,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 21
+    "2026-05": 22
   },
   "publicNames": [
+    {
+      "name": "Billy J.",
+      "role": "resident",
+      "suburb": "Rosebank",
+      "at": "2026-05-05T21:47:14.997Z"
+    },
     {
       "name": "Betty J.",
       "role": "resident",
@@ -123,6 +129,13 @@
   ],
   "publicStories": [
     {
+      "name": "Billy J.",
+      "role": "resident",
+      "suburb": "Rosebank",
+      "at": "2026-05-05T21:47:14.997Z",
+      "body": "Fox Road, Rosebank has deteriorated into an unsafe and unacceptable condition.\r\n\r\nSevere potholes now cover large sections of the road, forcing drivers to swerve into oncoming lanes to avoid damage. In places, the road edge has eroded away, with sharp drop-offs into bushland. Together, these hazards significantly increase the risk of collisions or vehicles being forced off the road.\r\n\r\nThis is no longer a minor maintenance issue — it is a clear and escalating safety risk for residents, families, school traffic, and service providers. The condition of the road is also impacting access to homes and local businesses, with deliveries and clients increasingly unwilling to travel along Fox Road.\r\n\r\nDespite ongoing rates being paid, maintenance has not kept pace with deterioration. Temporary repairs are not lasting, and long gaps between works are making the situation worse.\r\n\r\nWe are calling on Lismore City Council to:\r\n\r\n* Undertake urgent repairs to restore the road to a safe condition\r\n* Provide a clear and transparent timeline for works\r\n* Commit to a long-term solution, including sealing the road to prevent ongoing degradation\r\n\r\nThis is a basic safety and access issue. Without timely action, the risk to the community will continue to grow."
+    },
+    {
       "name": "Betty J.",
       "role": "resident",
       "suburb": "2480",
@@ -198,13 +211,6 @@
       "suburb": "Rosebank",
       "at": "2026-05-05T08:24:25.625Z",
       "body": "Every day driving  over the large potholes has caused damage to my vehicles and trailers and is an accident waiting to happen"
-    },
-    {
-      "name": "Julian S.",
-      "role": "resident",
-      "suburb": "Rosebank 2480",
-      "at": "2026-05-05T07:27:43.811Z",
-      "body": "The road is in a constant state of disrepair and often opens up almost immediately after grading. It is dangerous and a large source of irritation. Previous structural work in some areas has improved those areas, yet there are at least half a dozen weak spots which cover the width of the road most of the time."
     }
   ]
 }

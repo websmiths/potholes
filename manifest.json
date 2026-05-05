@@ -1,0 +1,219 @@
+{
+  "generatedAt": "2026-05-05T06:44:08.708Z",
+  "count": 15,
+  "items": [
+    {
+      "id": "3159",
+      "type": "photo",
+      "src": "media/photos/3159.jpg",
+      "thumb": "media/thumbs/3159.jpg",
+      "width": 4032,
+      "height": 3024,
+      "capturedAt": "2026-05-05T08:23:27",
+      "gps": {
+        "lat": -28.646358333333332,
+        "lon": 153.3833611111111
+      },
+      "sourceName": "fox-road-potholes_3159.HEIC"
+    },
+    {
+      "id": "3160",
+      "type": "photo",
+      "src": "media/photos/3160.jpg",
+      "thumb": "media/thumbs/3160.jpg",
+      "width": 4032,
+      "height": 3024,
+      "capturedAt": "2026-05-05T08:24:05",
+      "gps": {
+        "lat": -28.64647777777778,
+        "lon": 153.38353055555555
+      },
+      "sourceName": "fox-road-potholes_3160.HEIC"
+    },
+    {
+      "id": "3161",
+      "type": "photo",
+      "src": "media/photos/3161.jpg",
+      "thumb": "media/thumbs/3161.jpg",
+      "width": 4032,
+      "height": 3024,
+      "capturedAt": "2026-05-05T08:25:27",
+      "gps": {
+        "lat": -28.64698333333333,
+        "lon": 153.38362222222221
+      },
+      "sourceName": "fox-road-potholes_3161.HEIC"
+    },
+    {
+      "id": "3162",
+      "type": "photo",
+      "src": "media/photos/3162.jpg",
+      "thumb": "media/thumbs/3162.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-05T08:25:53",
+      "gps": {
+        "lat": -28.647005555555555,
+        "lon": 153.38360555555556
+      },
+      "sourceName": "fox-road-potholes_3162.HEIC"
+    },
+    {
+      "id": "3163",
+      "type": "photo",
+      "src": "media/photos/3163.jpg",
+      "thumb": "media/thumbs/3163.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-05T08:26:01",
+      "gps": {
+        "lat": -28.647030555555556,
+        "lon": 153.38362222222221
+      },
+      "sourceName": "fox-road-potholes_3163.HEIC"
+    },
+    {
+      "id": "3164",
+      "type": "photo",
+      "src": "media/photos/3164.jpg",
+      "thumb": "media/thumbs/3164.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-05T08:27:26",
+      "gps": {
+        "lat": -28.64795833333333,
+        "lon": 153.38331666666667
+      },
+      "sourceName": "fox-road-potholes_3164.HEIC"
+    },
+    {
+      "id": "3165",
+      "type": "video",
+      "src": "media/videos/3165.mp4",
+      "poster": "media/posters/3165.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration": 36.73,
+      "capturedAt": "2026-05-05T08:28:55+1000",
+      "gps": {
+        "lat": -28.649,
+        "lon": 153.383
+      },
+      "sourceName": "fox-road-potholes_3165.MOV"
+    },
+    {
+      "id": "3166",
+      "type": "photo",
+      "src": "media/photos/3166.jpg",
+      "thumb": "media/thumbs/3166.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-05T08:29:59",
+      "gps": {
+        "lat": -28.649136111111112,
+        "lon": 153.38299444444445
+      },
+      "sourceName": "fox-road-potholes_3166.HEIC"
+    },
+    {
+      "id": "3167",
+      "type": "photo",
+      "src": "media/photos/3167.jpg",
+      "thumb": "media/thumbs/3167.jpg",
+      "width": 4032,
+      "height": 3024,
+      "capturedAt": "2026-05-05T08:33:35",
+      "gps": {
+        "lat": -28.648991666666667,
+        "lon": 153.38539166666666
+      },
+      "sourceName": "fox-road-potholes_3167.HEIC"
+    },
+    {
+      "id": "3168",
+      "type": "photo",
+      "src": "media/photos/3168.jpg",
+      "thumb": "media/thumbs/3168.jpg",
+      "width": 4032,
+      "height": 3024,
+      "capturedAt": "2026-05-05T08:34:00",
+      "gps": {
+        "lat": -28.648930555555555,
+        "lon": 153.38534444444443
+      },
+      "sourceName": "fox-road-potholes_3168.HEIC"
+    },
+    {
+      "id": "3169",
+      "type": "photo",
+      "src": "media/photos/3169.jpg",
+      "thumb": "media/thumbs/3169.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-05T08:34:14",
+      "gps": {
+        "lat": -28.64892777777778,
+        "lon": 153.38537499999998
+      },
+      "sourceName": "fox-road-potholes_3169.HEIC"
+    },
+    {
+      "id": "3170",
+      "type": "photo",
+      "src": "media/photos/3170.jpg",
+      "thumb": "media/thumbs/3170.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-05T08:34:21",
+      "gps": {
+        "lat": -28.648913888888888,
+        "lon": 153.38539166666666
+      },
+      "sourceName": "fox-road-potholes_3170.HEIC"
+    },
+    {
+      "id": "3171",
+      "type": "video",
+      "src": "media/videos/3171.mp4",
+      "poster": "media/posters/3171.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration": 24.4967,
+      "capturedAt": "2026-05-05T08:43:49+1000",
+      "gps": {
+        "lat": -28.6466,
+        "lon": 153.3836
+      },
+      "sourceName": "fox-road-potholes_3171.MOV"
+    },
+    {
+      "id": "3173",
+      "type": "video",
+      "src": "media/videos/3173.mp4",
+      "poster": "media/posters/3173.jpg",
+      "width": 1920,
+      "height": 1080,
+      "duration": 8.0317,
+      "capturedAt": "2026-05-05T08:45:03+1000",
+      "gps": {
+        "lat": -28.6462,
+        "lon": 153.3833
+      },
+      "sourceName": "fox-road-potholes_3173.MOV"
+    },
+    {
+      "id": "3174",
+      "type": "photo",
+      "src": "media/photos/3174.jpg",
+      "thumb": "media/thumbs/3174.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-05T08:45:20",
+      "gps": {
+        "lat": -28.64621111111111,
+        "lon": 153.38323888888888
+      },
+      "sourceName": "fox-road-potholes_3174.HEIC"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Original full-resolution photos & videos — too heavy for git.
+# Web-optimised versions live in /media/ and are committed.
+artwork/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+node_modules/
+
+# Local config that may contain secrets (e.g. petition endpoint)
+config.local.json

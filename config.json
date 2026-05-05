@@ -1,0 +1,28 @@
+{
+  "siteName": "Fix Fox Road",
+  "tagline": "A community record of road degradation on Fox Road.",
+  "location": {
+    "street": "Fox Road",
+    "suburb": "Rosebank",
+    "state": "NSW",
+    "country": "Australia",
+    "council": "Lismore City Council"
+  },
+  "contact": {
+    "email": "you@example.com"
+  },
+  "petition": {
+    "endpoint": "",
+    "target": "Lismore City Council",
+    "headline": "Resurface Fox Road and end the cycle of patchwork repairs.",
+    "asks": [
+      "Commission a full engineering inspection of Fox Road within 30 days.",
+      "Carry out interim hazard patching of all potholes deeper than 50&nbsp;mm immediately.",
+      "Schedule and budget a full-depth resurfacing within the next financial year.",
+      "Publish a maintenance and inspection schedule so residents can hold council accountable."
+    ]
+  },
+  "social": {
+    "shareText": "Fox Road in Rosebank is falling apart. See the evidence and sign the petition."
+  }
+}

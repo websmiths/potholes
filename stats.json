@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T08:49:44.050Z",
-  "total": 8,
+  "generatedAt": "2026-05-05T09:09:41.460Z",
+  "total": 9,
   "byRole": {
-    "resident": 7,
+    "resident": 8,
     "local": 1,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 8
+    "2026-05": 9
   },
   "publicNames": [
+    {
+      "name": "Brett W.",
+      "role": "resident",
+      "suburb": "Rosebank, 2480",
+      "at": "2026-05-05T09:09:30.850Z"
+    },
     {
       "name": "Ryan D.",
       "role": "resident",
@@ -50,6 +56,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Brett W.",
+      "role": "resident",
+      "suburb": "Rosebank, 2480",
+      "at": "2026-05-05T09:09:30.850Z",
+      "body": "Impact on daily life and several near misses, particularly when the road is wet and slippery and when the school bus is on the road. \r\n\r\nThe community has also funded a delivery of our own road material and fix the worst potholes in between council grading."
+    },
     {
       "name": "Ryan D.",
       "role": "resident",

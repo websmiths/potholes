@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T10:08:11.768Z",
-  "total": 14,
+  "generatedAt": "2026-05-05T10:08:39.610Z",
+  "total": 15,
   "byRole": {
     "resident": 13,
-    "local": 1,
+    "local": 2,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 14
+    "2026-05": 15
   },
   "publicNames": [
+    {
+      "name": "Thea D.",
+      "role": "local",
+      "suburb": "248p",
+      "at": "2026-05-05T10:08:22.109Z"
+    },
     {
       "name": "Kingsley H.",
       "role": "resident",
@@ -86,6 +92,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Thea D.",
+      "role": "local",
+      "suburb": "248p",
+      "at": "2026-05-05T10:08:22.109Z",
+      "body": "I have had 3 flat tires last year & had to pay $1000 to a mechanic to fix radial arms, steering & suspension. \r\nIf I needed to be transported by an ambulance,  I would definitely fear the ride on the road, as it would be super bumpy & all over the road.\r\nThe community continues to purchase gravel to fill potholes & fix the road.\r\nIt's so dangerous navigating around the potholes, I feel like I may slip in the mud & swerve off the road or worse, into another car."
+    },
     {
       "name": "Elise H.",
       "role": "resident",

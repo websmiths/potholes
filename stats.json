@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T18:31:16.564Z",
-  "total": 18,
+  "generatedAt": "2026-05-05T20:09:11.747Z",
+  "total": 19,
   "byRole": {
-    "resident": 15,
+    "resident": 16,
     "local": 3,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 18
+    "2026-05": 19
   },
   "publicNames": [
+    {
+      "name": "Alicia H.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-05T20:08:50.423Z"
+    },
     {
       "name": "Eric H.",
       "role": "local",
@@ -104,6 +110,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Alicia H.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-05T20:08:50.423Z",
+      "body": "Constant vehicle repairs which mechanic says are from the road condition. Almost daily near misses with other cars trying to avoid big or clusters of potholes"
+    },
     {
       "name": "Eric H.",
       "role": "local",

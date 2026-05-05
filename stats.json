@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T08:24:48.787Z",
-  "total": 4,
+  "generatedAt": "2026-05-05T08:26:03.697Z",
+  "total": 5,
   "byRole": {
-    "resident": 4,
+    "resident": 5,
     "local": 0,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 4
+    "2026-05": 5
   },
   "publicNames": [
+    {
+      "name": "Luke D.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-05T08:25:45.717Z"
+    },
     {
       "name": "julien P.",
       "role": "resident",

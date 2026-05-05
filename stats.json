@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T20:14:57.817Z",
-  "total": 20,
+  "generatedAt": "2026-05-05T20:55:06.958Z",
+  "total": 21,
   "byRole": {
-    "resident": 17,
+    "resident": 18,
     "local": 3,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 20
+    "2026-05": 21
   },
   "publicNames": [
+    {
+      "name": "Betty J.",
+      "role": "resident",
+      "suburb": "2480",
+      "at": "2026-05-05T20:54:56.064Z"
+    },
     {
       "name": "Jason B.",
       "role": "resident",
@@ -116,6 +122,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Betty J.",
+      "role": "resident",
+      "suburb": "2480",
+      "at": "2026-05-05T20:54:56.064Z",
+      "body": "Every day I nearly have a collision with a car that is swerving to avoid the extensive potholes. Our cars have bottomed out so many times this past couple of months, about 5 flat tyres this year, tyre repairs and replacements. It honestly couldn’t get any worse."
+    },
     {
       "name": "Jason B.",
       "role": "resident",

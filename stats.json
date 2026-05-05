@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T08:26:03.697Z",
-  "total": 5,
+  "generatedAt": "2026-05-05T08:30:26.745Z",
+  "total": 6,
   "byRole": {
-    "resident": 5,
+    "resident": 6,
     "local": 0,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 5
+    "2026-05": 6
   },
   "publicNames": [
+    {
+      "name": "Gary W.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-05T08:30:11.873Z"
+    },
     {
       "name": "Luke D.",
       "role": "resident",
@@ -32,6 +38,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Gary W.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-05T08:30:11.873Z",
+      "body": "Had verious car damage.shocks etc."
+    },
     {
       "name": "julien P.",
       "role": "resident",

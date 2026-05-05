@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T10:52:03.546Z",
-  "total": 16,
+  "generatedAt": "2026-05-05T11:50:05.008Z",
+  "total": 17,
   "byRole": {
     "resident": 14,
-    "local": 2,
+    "local": 3,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 16
+    "2026-05": 17
   },
   "publicNames": [
+    {
+      "name": "Eric H.",
+      "role": "local",
+      "suburb": "Repentance Creek",
+      "at": "2026-05-05T11:49:51.423Z"
+    },
     {
       "name": "Narelle H.",
       "role": "resident",
@@ -98,6 +104,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Eric H.",
+      "role": "local",
+      "suburb": "Repentance Creek",
+      "at": "2026-05-05T11:49:51.423Z",
+      "body": "Riding motorcycle very dangerous with potholes and cars driving on the wrong side of the road. Have had to resort to patching potholes ourselves for to poor road maintenance. Guests have had numerous damages to vehicles."
+    },
     {
       "name": "Thea D.",
       "role": "local",

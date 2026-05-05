@@ -13,3 +13,4 @@ node_modules/
 
 # Local config that may contain secrets (e.g. petition endpoint)
 config.local.json
+worker/package-lock.json

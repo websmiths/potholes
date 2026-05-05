@@ -22,6 +22,43 @@ const VALID_ROLES = new Set(["resident", "local", "commuter", "business", "other
 const PUBLIC_STORIES_LIMIT = 12;
 const PUBLIC_NAMES_LIMIT = 200;
 
+// ---------- timezone ----------
+//
+// Submissions are timestamped in the road's local timezone so that filename
+// date prefixes and stats groupings match the lived experience of the
+// community signing. Australia/Sydney covers Rosebank (NSW) and observes
+// daylight saving, so the offset is +10:00 in winter and +11:00 in summer.
+
+const TZ = "Australia/Sydney";
+
+export function toLocalIso(date = new Date()) {
+  const opts = { timeZone: TZ };
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      ...opts,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+    })
+      .formatToParts(date)
+      .map((p) => [p.type, p.value])
+  );
+  const tzn = new Intl.DateTimeFormat("en-US", {
+    ...opts,
+    timeZoneName: "longOffset",
+  })
+    .formatToParts(date)
+    .find((p) => p.type === "timeZoneName").value;
+  const offset = tzn.replace(/^GMT/, "") || "+00:00";
+  // hour can be "24" at midnight under en-CA — normalize.
+  const hour = parts.hour === "24" ? "00" : parts.hour;
+  return `${parts.year}-${parts.month}-${parts.day}T${hour}:${parts.minute}:${parts.second}${offset}`;
+}
+
 // ---------- email hashing ----------
 
 export function normalizeEmail(email) {
@@ -348,7 +385,7 @@ export async function runAdd(submissionsDir) {
   rl.close();
 
   const id = shortId(hash);
-  const submittedAt = new Date().toISOString();
+  const submittedAt = toLocalIso();
   const sub = {
     id,
     submittedAt,

@@ -15,6 +15,38 @@
 
 const VALID_ROLES = ["resident", "local", "commuter", "business", "other"];
 
+// Timestamps are recorded in the road's local timezone so that filename
+// date prefixes and stats groupings reflect lived-experience dates rather
+// than UTC. Australia/Sydney observes daylight saving (+10 / +11).
+const TZ = "Australia/Sydney";
+
+function toLocalIso(date = new Date()) {
+  const opts = { timeZone: TZ };
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      ...opts,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+    })
+      .formatToParts(date)
+      .map((p) => [p.type, p.value])
+  );
+  const tzn = new Intl.DateTimeFormat("en-US", {
+    ...opts,
+    timeZoneName: "longOffset",
+  })
+    .formatToParts(date)
+    .find((p) => p.type === "timeZoneName").value;
+  const offset = tzn.replace(/^GMT/, "") || "+00:00";
+  const hour = parts.hour === "24" ? "00" : parts.hour;
+  return `${parts.year}-${parts.month}-${parts.day}T${hour}:${parts.minute}:${parts.second}${offset}`;
+}
+
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
@@ -86,7 +118,7 @@ export default {
     const story = String(data.story || "").trim();
     const displayPublicly = isTruthy(data.displayPublicly);
     const storyPublic = isTruthy(data.storyPublic);
-    const submittedAt = new Date().toISOString();
+    const submittedAt = toLocalIso();
     const filename = `submissions/${submittedAt.slice(0, 10)}-${id}.md`;
     const displayName = displayPublicly
       ? formatPublicName(name)

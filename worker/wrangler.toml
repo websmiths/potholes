@@ -1,0 +1,18 @@
+name = "fox-road-petition"
+main = "src/index.js"
+compatibility_date = "2026-04-01"
+workers_dev = true
+
+# Public, non-secret config. Edit as your domains evolve.
+[vars]
+GITHUB_OWNER = "websmiths"
+GITHUB_REPO = "potholes"
+GITHUB_BRANCH = "main"
+
+# Whitespace- or comma-separated list of origins allowed to POST to /sign.
+# Update this when you add a custom domain or branch-preview URL you want
+# to test from. Use "*" only for local debugging.
+ALLOWED_ORIGINS = "https://potholes.pages.dev http://localhost:8765 http://localhost:8000"
+
+# Secrets are NOT defined here — set them with `npx wrangler secret put`:
+#   npx wrangler secret put GITHUB_TOKEN

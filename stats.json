@@ -1,14 +1,31 @@
 {
-  "generatedAt": "2026-05-05T07:07:38.438Z",
-  "total": 0,
+  "generatedAt": "2026-05-05T07:27:43.826Z",
+  "total": 1,
   "byRole": {
-    "resident": 0,
+    "resident": 1,
     "local": 0,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
-  "byMonth": {},
-  "publicNames": [],
-  "publicStories": []
+  "byMonth": {
+    "2026-05": 1
+  },
+  "publicNames": [
+    {
+      "name": "Julian S.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-05T07:27:43.811Z"
+    }
+  ],
+  "publicStories": [
+    {
+      "name": "Julian S.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-05T07:27:43.811Z",
+      "body": "The road is in a constant state of disrepair and often opens up almost immediately after grading. It is dangerous and a large source of irritation. Previous structural work in some areas has improved those areas, yet there are at least half a dozen weak spots which cover the width of the road most of the time."
+    }
+  ]
 }

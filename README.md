@@ -13,6 +13,8 @@ GitHub Pages.
 artwork/                  Source photos & videos (gitignored — too heavy)
 media/                    Web-optimised JPG/MP4 + thumbs/posters (committed)
 submissions/              One markdown file per petition signature (privacy-redacted)
+worker/                   Cloudflare Worker that accepts form POSTs and commits submissions
+.github/workflows/        Stats-regeneration action
 build.mjs                 Multi-mode CLI: media build, --stats, --add, --import
 petition.mjs              Petition logic: hashing, dedup, stats, CSV import
 manifest.json             Generated media catalogue
@@ -80,11 +82,20 @@ service, no API to maintain. The site reads aggregated stats from
 - Withdrawing a signature: delete the matching `.md` file (or any whose
   `emailHash` matches the signer) and re-run `node build.mjs --stats`.
 
-### Day-to-day flow (current default — files only)
+### Two ways to receive signatures
 
-When someone signs the petition on the website, their browser opens a
-`mailto:` link pre-filled with their answers. They send it to the address
-in `config.json → contact.email`. You then:
+**Automated** (default once Worker is deployed):
+the form POSTs to a Cloudflare Worker (`worker/`) which commits a
+redacted markdown file to `submissions/`. A GitHub Action
+(`.github/workflows/petition-stats.yml`) regenerates `stats.json` and
+`signatures-hashes.json` and commits them. Cloudflare Pages
+auto-redeploys. Total elapsed time signature → live count: ~30–60
+seconds. **No manual processing.** See `worker/README.md` for one-time
+deploy steps.
+
+**Files-only fallback** (when `config.json → petition.endpoint` is
+empty): the form opens a `mailto:` link pre-filled with the signer's
+answers. They email it to you. You then:
 
 ```bash
 node build.mjs --add
@@ -94,10 +105,8 @@ git commit -m "Add signature"
 git push
 ```
 
-The deployed site updates within a minute or two of the push (Cloudflare
-Pages or GitHub Pages auto-redeploys). The signer's email is never stored;
-only its hash + their consent-gated display name + their consent-gated
-story.
+The signer's plain email is never stored in either flow — only its hash,
+plus their consent-gated display name and consent-gated story.
 
 ### Bulk import (optional)
 

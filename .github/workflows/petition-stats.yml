@@ -1,0 +1,46 @@
+name: Regenerate petition stats
+
+# Triggers when the Worker (or anything else) commits a new file in
+# submissions/. Loop avoidance: this workflow only commits stats.json and
+# signatures-hashes.json, neither of which match the path filter, so the
+# action does NOT re-trigger itself.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'submissions/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: petition-stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate stats
+        run: node build.mjs --stats
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- stats.json signatures-hashes.json; then
+            echo "no stats changes — skipping commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.json signatures-hashes.json
+          git commit -m "Regenerate petition stats [skip ci]"
+          git push

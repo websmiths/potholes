@@ -1,0 +1,14 @@
+{
+  "name": "fox-road-petition-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker that accepts petition form submissions and commits redacted markdown files to the repo.",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  }
+}

@@ -12,7 +12,7 @@
     "email": "julian@websmiths.com.au"
   },
   "petition": {
-    "endpoint": "",
+    "endpoint": "https://fox-road-petition.julian-86f.workers.dev",
     "target": "Lismore City Council",
     "headline": "Fix the structural failure on Fox Road — not just the surface.",
     "asks": [

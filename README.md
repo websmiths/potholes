@@ -4,19 +4,36 @@ A community-run static site documenting the deteriorating state of Fox Road,
 Rosebank (NSW), and collecting signatures for a repair petition.
 
 The site is intentionally simple: plain HTML / CSS / JS, no build framework,
-no runtime dependencies. Hosted on GitHub Pages.
+no runtime dependencies. Deploys as a static site on Cloudflare Pages or
+GitHub Pages.
 
 ## Layout
 
 ```
-artwork/         Source photos & videos (gitignored — too heavy)
-media/           Web-optimised JPG/MP4 + thumbs/posters (committed)
-build.mjs        Reads artwork/, writes media/ and manifest.json
-manifest.json    Generated catalogue (date, GPS, dimensions, paths)
-config.json      Site copy: location, council, petition asks, contact
-index.html       Page structure
-styles.css       Visual design
-app.js           Gallery, lightbox, petition submit
+artwork/                  Source photos & videos (gitignored — too heavy)
+media/                    Web-optimised JPG/MP4 + thumbs/posters (committed)
+submissions/              One markdown file per petition signature (privacy-redacted)
+build.mjs                 Multi-mode CLI: media build, --stats, --add, --import
+petition.mjs              Petition logic: hashing, dedup, stats, CSV import
+manifest.json             Generated media catalogue
+stats.json                Generated petition aggregates (counts, public lists)
+signatures-hashes.json    Generated email-hash list for client-side dedup hint
+config.json               Site copy: location, council, petition asks, contact
+index.html                Page structure
+styles.css                Visual design
+app.js                    Gallery, lightbox, petition form, stats display
+```
+
+## Required tools
+
+- `magick` (ImageMagick 7) — for HEIC → JPG and EXIF extraction
+- `ffmpeg` / `ffprobe` — for MOV → MP4 and metadata
+- `node` (any recent version)
+
+On macOS:
+
+```bash
+brew install imagemagick ffmpeg node
 ```
 
 ## Adding or removing media
@@ -38,57 +55,130 @@ Videos become `720p` H.264 MP4s at 25 fps + a `1280px` poster JPG.
 
 After running, commit the changes in `media/` and `manifest.json`.
 
-The site groups items into "incidents" by capture date, so as you add new
-batches over time they appear as separate dated sections — building up a
-record of the road's decline and any patch-and-fail cycles.
+The site groups items into **incidents** by capture date, so as new batches
+are added over time they appear as separate dated sections — building up a
+record of the road's decline and the grading-and-undermining cycle.
 
-## Required tools
+## Petition: how it works
 
-- `magick` (ImageMagick 7) — for HEIC → JPG and EXIF extraction
-- `ffmpeg` / `ffprobe` — for MOV → MP4 and metadata
-- `node` (any recent version)
+The petition is a **files-only** system. Every signature is a single
+markdown file in `submissions/`. There is no database, no third-party form
+service, no API to maintain. The site reads aggregated stats from
+`stats.json` (a derived artefact) and displays counts + opt-in public lists.
 
-On macOS:
+### Privacy contract
+
+- A signer's plain email **never appears anywhere in this repo**. Only its
+  SHA-256 hash is stored, used for deduplication and a soft client-side
+  "you've already signed" hint.
+- Names appear publicly only if the signer ticked **"Show my name on the
+  public list"** at signing time. Even then, only first name and last
+  initial are published (e.g. "J. Smith").
+- Story bodies appear publicly only if the signer ticked **"Share my story
+  publicly"**.
+- Suburbs and roles are aggregated for stats but otherwise non-identifying.
+- Withdrawing a signature: delete the matching `.md` file (or any whose
+  `emailHash` matches the signer) and re-run `node build.mjs --stats`.
+
+### Day-to-day flow (current default — files only)
+
+When someone signs the petition on the website, their browser opens a
+`mailto:` link pre-filled with their answers. They send it to the address
+in `config.json → contact.email`. You then:
 
 ```bash
-brew install imagemagick ffmpeg
+node build.mjs --add
+# answer 7 prompts (~10 seconds), pasting in name/email/role/etc.
+git add submissions/ stats.json signatures-hashes.json
+git commit -m "Add signature"
+git push
 ```
 
-## Configuring the petition
+The deployed site updates within a minute or two of the push (Cloudflare
+Pages or GitHub Pages auto-redeploys). The signer's email is never stored;
+only its hash + their consent-gated display name + their consent-gated
+story.
 
-The petition form posts to whatever endpoint you set in `config.json`:
+### Bulk import (optional)
 
-```json
-"petition": {
-  "endpoint": "https://formspree.io/f/XXXXXXX",
-  ...
-}
+If you ever wire the form up to a service like
+[Formspree](https://formspree.io/) by setting
+`config.json → petition.endpoint`, you can bulk-import a CSV export:
+
+```bash
+node build.mjs --import ~/Downloads/formspree-export.csv
 ```
 
-Recommended: a free [Formspree](https://formspree.io/) form. Sign up, create a
-form, paste the endpoint URL into `config.json`. Submissions are emailed to
-you. No backend required.
+The importer skips rows that:
 
-If `endpoint` is empty, the form falls back to `mailto:` using
-`contact.email` so signatures are not silently lost.
+- have no consent ticked,
+- have a missing or invalid email,
+- duplicate an email already in `submissions/`,
+- have the honeypot field filled (likely bot).
+
+It also preserves the per-row consent flags for `displayPublicly` and
+`storyPublic`.
+
+### Just regenerate stats
+
+If you edit submissions by hand (e.g. deleting one for withdrawal),
+regenerate the derived JSON files:
+
+```bash
+node build.mjs --stats
+```
+
+## Configuration
+
+Edit `config.json` to set:
+
+- `siteName`, `tagline` — top-of-page copy
+- `location.suburb`, `location.council` — wording in the blurb
+- `contact.email` — where mailto signatures are sent
+- `petition.target` — name of the body the petition addresses
+- `petition.headline` — headline above the asks
+- `petition.asks[]` — the numbered demands
+- `petition.endpoint` — leave blank for files-only/mailto flow; set to a
+  Formspree URL to enable inline form submission
 
 ## Local preview
+
+The site uses `fetch()` to load `manifest.json`, `config.json`, and
+`stats.json`, so it requires an HTTP server (not `file://`):
 
 ```bash
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-Or any other static file server.
+## Deployment
 
-## Deployment (GitHub Pages)
+### Cloudflare Pages (recommended)
 
-1. Push to `main` on https://github.com/websmiths/potholes
-2. Repo Settings → Pages → Source: `main` / `(root)` → Save
-3. Site will publish at `https://websmiths.github.io/potholes/`
+If the repository is connected to Cloudflare Pages:
 
-If you'd like a custom domain (e.g. `fixfoxroad.org`), add a `CNAME` file with
-the domain in it and configure DNS to point at GitHub Pages.
+- **Build command:** *leave blank* (the site is pre-built and committed).
+- **Build output directory:** *leave blank* or `/`.
+- **Root directory (advanced):** *leave blank*.
+- **Production branch:** `main`.
+
+Every push to `main` auto-deploys. The default URL is something like
+`https://potholes.pages.dev`. Custom domains can be attached in the
+Cloudflare dashboard under your Pages project's *Custom domains* tab.
+
+### GitHub Pages (alternative)
+
+Settings → Pages → Source: `main` / `(root)` → Save. URL will be
+`https://websmiths.github.io/potholes/`.
+
+(Pick *one* of these — running both at once just causes confusion.)
+
+### Custom domain
+
+Either platform supports custom domains. For Cloudflare Pages, add the
+domain in the dashboard and Cloudflare handles DNS automatically if the
+zone is on Cloudflare. For GitHub Pages, add a `CNAME` file at the repo
+root containing the bare domain and configure DNS at your registrar.
 
 ## License
 

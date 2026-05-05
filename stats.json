@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-05-05T07:07:38.438Z",
+  "total": 0,
+  "byRole": {
+    "resident": 0,
+    "local": 0,
+    "commuter": 0,
+    "business": 0,
+    "other": 0
+  },
+  "byMonth": {},
+  "publicNames": [],
+  "publicStories": []
+}

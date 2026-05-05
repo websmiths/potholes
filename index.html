@@ -39,10 +39,12 @@
       <section id="problem">
         <h2>Why this matters</h2>
         <p class="lede-prose">
-          Fox Road has degraded to the point where everyday driving is genuinely
-          unsafe. What was once a normal residential street is now a slalom of
-          potholes — some deep enough to swallow a wheel, several metres long,
-          and clustered so densely that drivers cannot avoid them all.
+          Fox Road is an unsealed dirt road. It is graded only every 18 months
+          at best — often considerably longer — and within weeks of each grade
+          deep potholes reform in the same places. These are not random
+          failures: certain stretches are structurally undermined, so every
+          grading is a cosmetic reset on top of a problem that needs proper
+          engineering attention.
         </p>
         <div class="impact-grid">
           <article>
@@ -57,10 +59,11 @@
           <article>
             <h3>Safety hazard</h3>
             <p>
-              Drivers swerve across lanes to dodge holes, putting cyclists,
-              pedestrians and oncoming traffic at risk. At night and after rain
-              the holes are nearly invisible. Motorcyclists are especially
-              exposed: a missed pothole can mean a serious crash.
+              Drivers swerve across the road to dodge holes, putting cyclists,
+              pedestrians and oncoming traffic at risk. After rain the holes
+              fill with water and become invisible. Loose gravel adds a second
+              hazard. Motorcyclists are especially exposed: a missed pothole
+              can mean a serious crash.
             </p>
           </article>
           <article>
@@ -68,17 +71,18 @@
             <p>
               Vehicles slow to walking pace through the worst stretches.
               Emergency services, waste collection, delivery vans and school
-              buses all share this road. Continued deterioration risks
-              long-term closure or weight restrictions.
+              buses all share this road. Each grading restores access only
+              briefly before the same sections fail again.
             </p>
           </article>
           <article>
-            <h3>Patch-and-fail cycle</h3>
+            <h3>Structural undermining</h3>
             <p>
-              Past repairs have been shallow asphalt patches that fail within
-              weeks. This site exists to document each cycle of failure so the
-              pattern is visible and the case for proper resurfacing becomes
-              undeniable.
+              The worst potholes return in the exact same locations every
+              cycle, often within weeks of grading — evidence that the road's
+              underlying base has failed in those spots. No amount of surface
+              grading will fix this. Documenting each cycle here builds the
+              case for proper sub-base reconstruction.
             </p>
           </article>
         </div>
@@ -105,13 +109,22 @@
 
       <section id="petition" class="petition">
         <div class="petition-inner">
-          <h2 data-bind="petitionHeadline">Resurface Fox Road and end the cycle of patchwork repairs.</h2>
+          <h2 data-bind="petitionHeadline">Fix the structural failure on Fox Road — not just the surface.</h2>
           <p>
             We, the undersigned, call on
             <strong data-bind="petitionTarget">Lismore City Council</strong>
             to act on the dangerous condition of Fox Road. Specifically:
           </p>
           <ol data-bind="petitionAsks" class="asks"></ol>
+
+          <div id="petitionStats" class="petition-stats hidden" aria-live="polite">
+            <div class="stat-headline">
+              <span class="stat-num" id="statTotal">0</span>
+              <span class="stat-label">signature<span id="statPlural">s</span> so far</span>
+            </div>
+            <ul class="stat-roles" id="statRoles"></ul>
+            <p class="stat-updated">Updated <span id="statUpdated">—</span>.</p>
+          </div>
 
           <form id="petitionForm" class="petition-form" novalidate>
             <div class="row">
@@ -151,24 +164,57 @@
             <label class="check">
               <input name="consent" type="checkbox" required />
               <span>
-                I consent to my name being shared publicly as a signatory and
-                to my contact details being shared with
+                I consent to my contact details being shared with
                 <span data-bind="petitionTarget">the council</span> in support
                 of this petition.
+                <em>Required.</em>
               </span>
             </label>
+            <label class="check">
+              <input name="displayPublicly" type="checkbox" />
+              <span>
+                Show my name on the public list of signatories on this site.
+                Only my first name and last initial will appear (e.g. "J. Smith").
+                <em>Optional — leave unticked to remain anonymous.</em>
+              </span>
+            </label>
+            <label class="check">
+              <input name="storyPublic" type="checkbox" />
+              <span>
+                Share my story (above) publicly on this site. Your story will
+                only be published if you tick this box.
+                <em>Optional.</em>
+              </span>
+            </label>
+            <p id="alreadySigned" class="already-signed hidden" role="status">
+              You've already signed this petition from this email — thank you!
+              You don't need to sign again.
+            </p>
             <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
             <div class="form-actions">
               <button type="submit" class="btn-primary">Add my signature</button>
               <span id="formStatus" class="form-status" role="status" aria-live="polite"></span>
             </div>
             <p class="fine">
-              Submissions are sent securely to the petition organiser.
-              We never publish your email or phone number. You can withdraw
-              your signature at any time by emailing
-              <a id="contactLink" href="#">the organiser</a>.
+              Your email is never published — it is hashed and used only to
+              prevent duplicate signatures. You can withdraw your signature at
+              any time by emailing <a id="contactLink" href="#">the organiser</a>.
             </p>
           </form>
+
+          <div id="publicSignatories" class="public-signatories hidden">
+            <h3>Public signatories</h3>
+            <p class="muted">
+              These signers chose to display their names publicly. Many more
+              have signed anonymously — see the count above.
+            </p>
+            <ul id="publicNamesList" class="names-list"></ul>
+          </div>
+
+          <div id="publicStories" class="public-stories hidden">
+            <h3>In their own words</h3>
+            <ul id="publicStoriesList" class="stories-list"></ul>
+          </div>
         </div>
       </section>
     </main>

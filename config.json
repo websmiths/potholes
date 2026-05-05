@@ -9,17 +9,17 @@
     "council": "Lismore City Council"
   },
   "contact": {
-    "email": "you@example.com"
+    "email": "julian@websmiths.com.au"
   },
   "petition": {
     "endpoint": "",
     "target": "Lismore City Council",
-    "headline": "Resurface Fox Road and end the cycle of patchwork repairs.",
+    "headline": "Fix the structural failure on Fox Road — not just the surface.",
     "asks": [
-      "Commission a full engineering inspection of Fox Road within 30 days.",
-      "Carry out interim hazard patching of all potholes deeper than 50&nbsp;mm immediately.",
-      "Schedule and budget a full-depth resurfacing within the next financial year.",
-      "Publish a maintenance and inspection schedule so residents can hold council accountable."
+      "Commission an independent engineering inspection of Fox Road within 30 days to identify the structurally undermined sections and their root causes.",
+      "Grade the worst-affected sections immediately, ahead of the next scheduled cycle, while a permanent fix is being planned.",
+      "Commit funded sub-base reconstruction for the failed sections within the next financial year — not another round of surface grading on top of a known problem.",
+      "Publish a public grading, inspection and complaint-response schedule for Fox Road so residents can hold council accountable."
     ]
   },
   "social": {

@@ -1,7 +1,10 @@
 #!/usr/bin/env node
-// Converts /artwork/*.HEIC and /artwork/*.MOV into web-ready assets
-// and writes manifest.json. Idempotent: skips files whose outputs are
-// up to date relative to the source mtime.
+// Multi-mode build script.
+//
+//   node build.mjs                — convert artwork/ -> media/ + manifest.json (default)
+//   node build.mjs --stats        — regenerate stats.json + signatures-hashes.json from submissions/
+//   node build.mjs --add          — interactively add a single signature to submissions/, then --stats
+//   node build.mjs --import FILE  — bulk-import a CSV (e.g. Formspree export) into submissions/, then --stats
 
 import { execFileSync, spawnSync } from "node:child_process";
 import {
@@ -13,16 +16,45 @@ import {
   writeFileSync,
 } from "node:fs";
 import { extname, join, basename } from "node:path";
+import { runAdd, runImport, runStats } from "./petition.mjs";
 
 const ROOT = new URL(".", import.meta.url).pathname;
 const SRC = join(ROOT, "artwork");
 const OUT = join(ROOT, "media");
+const SUBMISSIONS = join(ROOT, "submissions");
+const STATS_PATH = join(ROOT, "stats.json");
+const HASHES_PATH = join(ROOT, "signatures-hashes.json");
 const DIRS = {
   photos: join(OUT, "photos"),
   thumbs: join(OUT, "thumbs"),
   videos: join(OUT, "videos"),
   posters: join(OUT, "posters"),
 };
+
+// ---------- CLI dispatch ----------
+const argv = process.argv.slice(2);
+if (argv.includes("--stats")) {
+  runStats(SUBMISSIONS, STATS_PATH, HASHES_PATH);
+  process.exit(0);
+}
+if (argv.includes("--add")) {
+  await runAdd(SUBMISSIONS);
+  runStats(SUBMISSIONS, STATS_PATH, HASHES_PATH);
+  process.exit(0);
+}
+const importIdx = argv.indexOf("--import");
+if (importIdx >= 0) {
+  const csvPath = argv[importIdx + 1];
+  if (!csvPath) {
+    console.error("usage: node build.mjs --import <path-to-csv>");
+    process.exit(1);
+  }
+  runImport(csvPath, SUBMISSIONS);
+  runStats(SUBMISSIONS, STATS_PATH, HASHES_PATH);
+  process.exit(0);
+}
+
+// ---------- default: media build ----------
 for (const d of Object.values(DIRS)) mkdirSync(d, { recursive: true });
 
 const PHOTO_MAX = 1800;

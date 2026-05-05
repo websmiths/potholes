@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T09:32:01.720Z",
-  "total": 12,
+  "generatedAt": "2026-05-05T10:01:34.613Z",
+  "total": 13,
   "byRole": {
-    "resident": 11,
+    "resident": 12,
     "local": 1,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 12
+    "2026-05": 13
   },
   "publicNames": [
+    {
+      "name": "Elise H.",
+      "role": "resident",
+      "suburb": "Repentance creek, 2480",
+      "at": "2026-05-05T10:01:19.008Z"
+    },
     {
       "name": "Laura D.",
       "role": "resident",
@@ -74,6 +80,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Elise H.",
+      "role": "resident",
+      "suburb": "Repentance creek, 2480",
+      "at": "2026-05-05T10:01:19.008Z",
+      "body": "It damages my car as it grates the bottom every day I use it. Also getting unsafe, risk falling down high ravine while escaping the potholes, in two locations,"
+    },
     {
       "name": "Vanessa W.",
       "role": "resident",

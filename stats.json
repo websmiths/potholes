@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T08:33:37.122Z",
-  "total": 7,
+  "generatedAt": "2026-05-05T08:49:44.050Z",
+  "total": 8,
   "byRole": {
-    "resident": 6,
+    "resident": 7,
     "local": 1,
     "commuter": 0,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 7
+    "2026-05": 8
   },
   "publicNames": [
+    {
+      "name": "Ryan D.",
+      "role": "resident",
+      "suburb": "Repentance Creek 2480",
+      "at": "2026-05-05T08:49:33.493Z"
+    },
     {
       "name": "Rick U.",
       "role": "local",
@@ -44,6 +50,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Ryan D.",
+      "role": "resident",
+      "suburb": "Repentance Creek 2480",
+      "at": "2026-05-05T08:49:33.493Z",
+      "body": "My wife and i have had several near misses when  meeting cars on the road, its an accident waiting to happen. Fix it before someone gets hurt.\r\nRecently replaced suspension on both our cars and now concerned about the cost of yet more repairs due to the road wrecking our cars."
+    },
     {
       "name": "Gary W.",
       "role": "resident",

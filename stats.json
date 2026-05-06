@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-06T10:02:43+10:00",
-  "total": 24,
+  "generatedAt": "2026-05-06T10:50:37+10:00",
+  "total": 25,
   "byRole": {
-    "resident": 20,
+    "resident": 21,
     "local": 3,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 24
+    "2026-05": 25
   },
   "publicNames": [
+    {
+      "name": "Anthony G.",
+      "role": "resident",
+      "suburb": "",
+      "at": "2026-05-06T10:50:22+10:00"
+    },
     {
       "name": "Sarah B.",
       "role": "resident",
@@ -141,6 +147,13 @@
   ],
   "publicStories": [
     {
+      "name": "Anthony G.",
+      "role": "resident",
+      "suburb": "",
+      "at": "2026-05-06T10:50:22+10:00",
+      "body": "Many near misses on the road, vehicle has suffered"
+    },
+    {
       "name": "Billy J.",
       "role": "resident",
       "suburb": "Rosebank",
@@ -216,13 +229,6 @@
       "suburb": "Rosebank 2480",
       "at": "2026-05-05T18:30:11+10:00",
       "body": "Had verious car damage.shocks etc."
-    },
-    {
-      "name": "julien P.",
-      "role": "resident",
-      "suburb": "Rosebank",
-      "at": "2026-05-05T18:24:25+10:00",
-      "body": "Every day driving  over the large potholes has caused damage to my vehicles and trailers and is an accident waiting to happen"
     }
   ]
 }

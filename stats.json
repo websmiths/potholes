@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-06T10:50:37+10:00",
-  "total": 25,
+  "generatedAt": "2026-05-06T11:13:46+10:00",
+  "total": 26,
   "byRole": {
-    "resident": 21,
+    "resident": 22,
     "local": 3,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 25
+    "2026-05": 26
   },
   "publicNames": [
+    {
+      "name": "Mal F.",
+      "role": "resident",
+      "suburb": "",
+      "at": "2026-05-06T11:13:33+10:00"
+    },
     {
       "name": "Anthony G.",
       "role": "resident",
@@ -147,6 +153,13 @@
   ],
   "publicStories": [
     {
+      "name": "Mal F.",
+      "role": "resident",
+      "suburb": "",
+      "at": "2026-05-06T11:13:33+10:00",
+      "body": "I have had numerous near misses on the corner known as Snapes corner. I have also recovered 3 vehicles on my section of Fox Rd using my tractor where they have moved a little too far towards the edge, got caught in the loose gravel and gone partially over the edge. There was one vehicle that actually went right off the edge onto the driveway below and was a right off. Luckily the passengers were able to exit the vehicle before it fell off the edge. \r\nThe culvert drains are constantly blocking up, forcing the water to flow in the vehicle track lines. \r\nI personally do not want Fox road tarred as I believe this will increase the speed of vehicles and lead to more accidents and wildlife kills but something does need to be done about the continual failures in the same locations."
+    },
+    {
       "name": "Anthony G.",
       "role": "resident",
       "suburb": "",
@@ -222,13 +235,6 @@
       "suburb": "Repentance Creek 2480",
       "at": "2026-05-05T18:49:33+10:00",
       "body": "My wife and i have had several near misses when  meeting cars on the road, its an accident waiting to happen. Fix it before someone gets hurt.\r\nRecently replaced suspension on both our cars and now concerned about the cost of yet more repairs due to the road wrecking our cars."
-    },
-    {
-      "name": "Gary W.",
-      "role": "resident",
-      "suburb": "Rosebank 2480",
-      "at": "2026-05-05T18:30:11+10:00",
-      "body": "Had verious car damage.shocks etc."
     }
   ]
 }

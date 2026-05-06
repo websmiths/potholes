@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-06T12:49:40+10:00",
-  "total": 28,
+  "generatedAt": "2026-05-06T13:59:52+10:00",
+  "total": 29,
   "byRole": {
     "resident": 24,
-    "local": 3,
+    "local": 4,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 28
+    "2026-05": 29
   },
   "publicNames": [
+    {
+      "name": "Lydia K.",
+      "role": "local",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-06T13:59:42+10:00"
+    },
     {
       "name": "Sam R.",
       "role": "resident",
@@ -165,6 +171,13 @@
   ],
   "publicStories": [
     {
+      "name": "Lydia K.",
+      "role": "local",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-06T13:59:42+10:00",
+      "body": "Fox Road has always been a problem to drive on with all the potential holes and it can be quite dangerous with steep drop away and oncoming traffic. A proper investigation of the condition of the road leading to the potential of a better road surface, is required, especially as there are a lot of residents living along Fox and adjoining roads."
+    },
+    {
       "name": "Demetri C.",
       "role": "resident",
       "suburb": "Rosebank 2480",
@@ -240,13 +253,6 @@
       "suburb": "Rosebank/2480",
       "at": "2026-05-05T19:12:00+10:00",
       "body": "Sooo dangerous. Liability on my car, scary at times."
-    },
-    {
-      "name": "Brett W.",
-      "role": "resident",
-      "suburb": "Rosebank, 2480",
-      "at": "2026-05-05T19:09:30+10:00",
-      "body": "Impact on daily life and several near misses, particularly when the road is wet and slippery and when the school bus is on the road. \r\n\r\nThe community has also funded a delivery of our own road material and fix the worst potholes in between council grading."
     }
   ]
 }

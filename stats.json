@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-06T13:59:52+10:00",
-  "total": 29,
+  "generatedAt": "2026-05-06T14:26:33+10:00",
+  "total": 30,
   "byRole": {
-    "resident": 24,
+    "resident": 25,
     "local": 4,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 29
+    "2026-05": 30
   },
   "publicNames": [
+    {
+      "name": "Gerard D.",
+      "role": "resident",
+      "suburb": "2480",
+      "at": "2026-05-06T14:26:16+10:00"
+    },
     {
       "name": "Lydia K.",
       "role": "local",
@@ -171,6 +177,13 @@
   ],
   "publicStories": [
     {
+      "name": "Gerard D.",
+      "role": "resident",
+      "suburb": "2480",
+      "at": "2026-05-06T14:26:16+10:00",
+      "body": "The condition of Fox Road is a very sorry indictment on LCC. As other residents have noted, grading in recent years has been, at best perfunctionary. Undertaken virtually every time during wet weather with no attempts to deal with soft spots and potholes which just reappear in days. \r\nWhile working to clear my own driveway drain recently - blocked in large part due to the council drains not performing correctly - I watched in horror as vehicles are being forced to travel on the wrong side of the road around a blind corner in order to avoid vehicle damage! This is a tragedy waiting to happen and LCC is now clearly on notice that these dangerous road conditions are a definate public safety issue and a potentialy serious public liability issue. \r\nFox Road is, and will always be a school bus route and the twice daily trips of the school bus (as well as other heavy vehicles) degrades the road surface very quickly and within days turns potholes into melonholes. Surely council has some established policy to properly maintain school bus routes to a safe and adeqaute standard?\r\nAs a ratepayer in the shire for many years, I would also point out that we get no garbage collection services, no water infrastructure, no sewarage services and frankly, very little else for our rates contribution. Even the Lismore tip has become ridiculously expensive and is now charging new levies for even recycleables. It really does leave us rural rate payers wondering exactly what it is we recieve for our ever increasing rates charges.\r\nCouncil needs to act urgently on this and embark on a major upgrade of the road to bring it to an adequate safety standard including widening, corner reallignments, proper drain consrtruction and drainage, signage, and a staged sealing program begining at the most used section from Repentance Creek Road. \r\nAnother perfuctionary grading and rolling will be woefully inadequate."
+    },
+    {
       "name": "Lydia K.",
       "role": "local",
       "suburb": "Rosebank 2480",
@@ -246,13 +259,6 @@
       "suburb": "Repentance creek, 2480",
       "at": "2026-05-05T20:01:19+10:00",
       "body": "It damages my car as it grates the bottom every day I use it. Also getting unsafe, risk falling down high ravine while escaping the potholes, in two locations,"
-    },
-    {
-      "name": "Vanessa W.",
-      "role": "resident",
-      "suburb": "Rosebank/2480",
-      "at": "2026-05-05T19:12:00+10:00",
-      "body": "Sooo dangerous. Liability on my car, scary at times."
     }
   ]
 }

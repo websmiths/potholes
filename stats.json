@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-06T15:19:14+10:00",
-  "total": 31,
+  "generatedAt": "2026-05-06T21:31:59+10:00",
+  "total": 32,
   "byRole": {
-    "resident": 26,
+    "resident": 27,
     "local": 4,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 31
+    "2026-05": 32
   },
   "publicNames": [
+    {
+      "name": "Conor M.",
+      "role": "resident",
+      "suburb": "2480",
+      "at": "2026-05-06T21:31:40+10:00"
+    },
     {
       "name": "Gerard D.",
       "role": "resident",

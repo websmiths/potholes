@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-05T23:24:53.650Z",
-  "total": 23,
+  "generatedAt": "2026-05-06T10:02:43+10:00",
+  "total": 24,
   "byRole": {
-    "resident": 19,
+    "resident": 20,
     "local": 3,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 23
+    "2026-05": 24
   },
   "publicNames": [
+    {
+      "name": "Sarah B.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-06T10:02:34+10:00"
+    },
     {
       "name": "Annette M.",
       "role": "commuter",

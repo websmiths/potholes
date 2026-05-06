@@ -19,8 +19,6 @@ import { join } from "node:path";
 import { createInterface } from "node:readline";
 
 const VALID_ROLES = new Set(["resident", "local", "commuter", "business", "other"]);
-const PUBLIC_STORIES_LIMIT = 12;
-const PUBLIC_NAMES_LIMIT = 200;
 
 // ---------- timezone ----------
 //
@@ -460,8 +458,8 @@ export function runStats(submissionsDir, statsPath, hashesPath) {
     total: subs.length,
     byRole,
     byMonth,
-    publicNames: publicNames.slice(0, PUBLIC_NAMES_LIMIT),
-    publicStories: publicStories.slice(0, PUBLIC_STORIES_LIMIT),
+    publicNames,
+    publicStories,
   };
   writeFileSync(statsPath, JSON.stringify(stats, null, 2));
 

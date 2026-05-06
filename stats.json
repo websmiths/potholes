@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-06T11:13:46+10:00",
-  "total": 26,
+  "generatedAt": "2026-05-06T11:25:35+10:00",
+  "total": 27,
   "byRole": {
-    "resident": 22,
+    "resident": 23,
     "local": 3,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 26
+    "2026-05": 27
   },
   "publicNames": [
+    {
+      "name": "Demetri C.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-06T11:25:19+10:00"
+    },
     {
       "name": "Mal F.",
       "role": "resident",
@@ -153,6 +159,13 @@
   ],
   "publicStories": [
     {
+      "name": "Demetri C.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-06T11:25:19+10:00",
+      "body": "I am writing to raise serious concerns about the current condition of Fox Road, Rosebank, and to request urgent action to properly repair and maintain the road.\r\nI live at 198 Fox Road, Rosebank NSW 2480, and access to my property is via Fox Road. Fox Road is a rural gravel/dirt road approximately 2 kilometres long. Lismore City Council is responsible for the maintenance and upkeep of the road, and I am a Lismore City Council ratepayer.\r\nFox Road was last repaired in December 2024. Prior to that work being carried out, the road was already in very poor condition, with numerous potholes and ruts. In December 2024, a motor grader and compacting roller were used to repair and resurface the road. Several truckloads of road base were also delivered and spread in sections where required.\r\nUnfortunately, the repair work did not adequately address the underlying issue. The potholes themselves were not properly treated before the road was graded and rolled. In my view, the road should have been ripped with the rear tines of the grader to dig below the existing potholes, before being graded, rolled, and topped with road base where necessary.\r\nInstead, the potholes were effectively graded over and filled in. As a result, the same potholes began to reappear within only a few weeks and have continued to worsen over time. I personally witnessed the grading work in December 2024 and can verify that no ripping was undertaken.\r\nIt is now May 2026, and the condition of Fox Road has again become extremely dangerous. Vehicles travelling along the road are forced to swerve to both sides to avoid deep potholes and prevent damage. This creates a serious safety risk, as oncoming vehicles are often approaching from the wrong side of the road while also trying to avoid the same hazards.\r\nThis situation is especially concerning because, twice each school day, the school bus must negotiate this dangerous road while transporting local children to and from school. This places children and other road users at unnecessary risk on a daily basis.\r\nI am also the Deputy Captain of the NSW Rural Fire Service Rosebank Brigade. The Rosebank Brigade regularly conducts monthly training exercises in areas accessed via Fox Road. I can attest that the current condition of Fox Road would significantly hinder the Brigade’s ability to respond quickly and safely to a Triple Zero call-out in an emergency.\r\nFox Road is located in a high fire danger area, where rapid emergency response is critical to the protection of life and property. Any delay caused by the poor condition of the road could have serious consequences for residents, emergency service volunteers, and the broader community.\r\nA serious accident or emergency response delay is waiting to happen unless proper action is taken.\r\nI respectfully request that Lismore City Council urgently inspect Fox Road and arrange for proper remedial works to be undertaken. These works should address the underlying road defects, not simply grade over the existing potholes. A more durable repair is required to ensure the road is safe for residents, school children, bus drivers, emergency services, and all other road users.\r\nI would appreciate a written response outlining what action Council intends to take and when Fox Road will be properly repaired."
+    },
+    {
       "name": "Mal F.",
       "role": "resident",
       "suburb": "",
@@ -228,13 +241,6 @@
       "suburb": "Rosebank, 2480",
       "at": "2026-05-05T19:09:30+10:00",
       "body": "Impact on daily life and several near misses, particularly when the road is wet and slippery and when the school bus is on the road. \r\n\r\nThe community has also funded a delivery of our own road material and fix the worst potholes in between council grading."
-    },
-    {
-      "name": "Ryan D.",
-      "role": "resident",
-      "suburb": "Repentance Creek 2480",
-      "at": "2026-05-05T18:49:33+10:00",
-      "body": "My wife and i have had several near misses when  meeting cars on the road, its an accident waiting to happen. Fix it before someone gets hurt.\r\nRecently replaced suspension on both our cars and now concerned about the cost of yet more repairs due to the road wrecking our cars."
     }
   ]
 }

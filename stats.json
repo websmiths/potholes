@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-07T10:58:56+10:00",
-  "total": 33,
+  "generatedAt": "2026-05-07T11:02:11+10:00",
+  "total": 34,
   "byRole": {
     "resident": 27,
-    "local": 5,
+    "local": 6,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 33
+    "2026-05": 34
   },
   "publicNames": [
+    {
+      "name": "Layla T.",
+      "role": "local",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-07T11:01:49+10:00"
+    },
     {
       "name": "Samantha S.",
       "role": "local",
@@ -188,6 +194,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Layla T.",
+      "role": "local",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-07T11:01:49+10:00",
+      "body": "The conditions of the road effect my families health, safety and community connections - all factors which Lismore City Council hold in high regard for their residents.\r\n\r\nAs a resident of Maso Road I am required to drive on Fox Road multiple times a day. Each trip I factor in extra time to navigate the dangerous roads and now travel with a air compressor pump in case of tyre damage along with other safety gear - there have been multiple instances of needing to assist fellow neighbours who's cars have been damaged by road conditions. \r\n\r\nAlong with road conditions effecting car travel, the road condition is also effecting walking and biking safety -  my children are no longer able to ride safely to their school bus stop. Apart from severe pot holes and damage, extreme levels of dust from the road make it impossible on a dry day to walk along the road without a face covering and have led to many neighbours needing to create physical barriers between the roads and houses with fences and vegetation. \r\n\r\nTo add to all of this, we have recently been given the news that Australia Post is refusing to run a mail delivery to our roads because of the road condition. \r\n\r\nBoth Fox and Maso Roads are severely damaged and degrade rapidly as soon as any cosmetic grading is done. Support by Lismore City Council to seal and improve these roads is imperative to ensure the health and safety of local community and people visiting the National Park."
+    },
     {
       "name": "Gerard D.",
       "role": "resident",

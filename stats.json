@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-07T20:32:54+10:00",
-  "total": 41,
+  "generatedAt": "2026-05-07T20:35:07+10:00",
+  "total": 42,
   "byRole": {
     "resident": 28,
     "local": 7,
-    "commuter": 5,
+    "commuter": 6,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 41
+    "2026-05": 42
   },
   "publicNames": [
+    {
+      "name": "Andrea P.",
+      "role": "commuter",
+      "suburb": "2483",
+      "at": "2026-05-07T20:34:51+10:00"
+    },
     {
       "name": "Didier M.",
       "role": "commuter",

@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-07T20:35:07+10:00",
-  "total": 42,
+  "generatedAt": "2026-05-07T20:48:30+10:00",
+  "total": 43,
   "byRole": {
     "resident": 28,
     "local": 7,
-    "commuter": 6,
+    "commuter": 7,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 42
+    "2026-05": 43
   },
   "publicNames": [
+    {
+      "name": "Andrea P.",
+      "role": "commuter",
+      "suburb": "Oceanshores 2483",
+      "at": "2026-05-07T20:48:16+10:00"
+    },
     {
       "name": "Andrea P.",
       "role": "commuter",

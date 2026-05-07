@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-07T20:29:01+10:00",
-  "total": 40,
+  "generatedAt": "2026-05-07T20:32:54+10:00",
+  "total": 41,
   "byRole": {
     "resident": 28,
     "local": 7,
-    "commuter": 4,
+    "commuter": 5,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 40
+    "2026-05": 41
   },
   "publicNames": [
     {

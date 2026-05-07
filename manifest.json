@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-06T09:30:57+10:00",
-  "count": 15,
+  "generatedAt": "2026-05-07T19:58:38+10:00",
+  "count": 17,
   "items": [
     {
       "id": "3159",
@@ -214,6 +214,34 @@
         "lon": 153.38323888888888
       },
       "sourceName": "fox-road-potholes_3174.HEIC"
+    },
+    {
+      "id": "fox-road-edge-puddle",
+      "type": "photo",
+      "src": "media/photos/fox-road-edge-puddle.jpg",
+      "thumb": "media/thumbs/fox-road-edge-puddle.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-07T17:13:34",
+      "gps": {
+        "lat": -28.64033611111111,
+        "lon": 153.38691666666665
+      },
+      "sourceName": "fox-road-edge-puddle.HEIC"
+    },
+    {
+      "id": "fox-road-auspost",
+      "type": "photo",
+      "src": "media/photos/fox-road-auspost.jpg",
+      "thumb": "media/thumbs/fox-road-auspost.jpg",
+      "width": 5712,
+      "height": 4284,
+      "capturedAt": "2026-05-07T17:34:00",
+      "gps": {
+        "lat": -28.63956111111111,
+        "lon": 153.38891666666666
+      },
+      "sourceName": "fox-road-auspost.HEIC"
     }
   ]
 }

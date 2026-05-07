@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-06T21:49:39+10:00",
-  "total": 32,
+  "generatedAt": "2026-05-07T10:58:56+10:00",
+  "total": 33,
   "byRole": {
     "resident": 27,
-    "local": 4,
+    "local": 5,
     "commuter": 1,
     "business": 0,
     "other": 0
   },
   "byMonth": {
-    "2026-05": 32
+    "2026-05": 33
   },
   "publicNames": [
+    {
+      "name": "Samantha S.",
+      "role": "local",
+      "suburb": "2480",
+      "at": "2026-05-07T10:58:39+10:00"
+    },
     {
       "name": "Conor M.",
       "role": "resident",
@@ -222,7 +228,7 @@
       "role": "resident",
       "suburb": "Rosebank",
       "at": "2026-05-06T07:47:14+10:00",
-      "body": "Fox Road, Rosebank has deteriorated into an unsafe and unacceptable condition.\r\n\r\nSevere potholes now cover large sections of the road, forcing drivers to swerve into oncoming lanes to avoid damage. In places, the road edge has eroded away, with sharp drop-offs into bushland. Together, these hazards significantly increase the risk of collisions or vehicles being forced off the road.\r\n\r\nThis is no longer a minor maintenance issue — it is a clear and escalating safety risk for residents, families, school traffic, and service providers. The condition of the road is also impacting access to homes and local businesses, with deliveries and clients increasingly unwilling to travel along Fox Road.\r\n\r\nDespite ongoing rates being paid, maintenance has not kept pace with deterioration. Temporary repairs are not lasting, and long gaps between works are making the situation worse.\r\n\r\nWe are calling on Lismore City Council to:\r\n\r\n* Undertake urgent repairs to restore the road to a safe condition\r\n* Provide a clear and transparent timeline for works\r\n* Commit to a long-term solution, including sealing the road to prevent ongoing degradation\r\n\r\nThis is a basic safety and access issue. Without timely action, the risk to the community will continue to grow."
+      "body": "Fox Road, Rosebank has deteriorated into an unsafe and unacceptable condition.\n\nSevere potholes now cover large sections of the road, forcing drivers to swerve into oncoming lanes to avoid damage. In places, the road edge has eroded away, with sharp drop-offs into bushland. Together, these hazards significantly increase the risk of collisions or vehicles being forced off the road.\n\nThis is no longer a minor maintenance issue — it is a clear and escalating safety risk for residents, families, school traffic, and service providers. The condition of the road is also impacting access to homes and local businesses, with deliveries and clients increasingly unwilling to travel along Fox Road.\n\nDespite ongoing rates being paid, maintenance has not kept pace with deterioration. Temporary repairs are not lasting, and long gaps between works are making the situation worse.\n\nWe are calling on Lismore City Council to:\n\n* Undertake urgent repairs to restore the road to a safe condition\n* Provide a clear and transparent timeline for works\n* Commit to a long-term solution, including sealing the road to prevent ongoing degradation\n\nThis is a basic safety and access issue. Without timely action, the risk to the community will continue to grow."
     },
     {
       "name": "Betty J.",
@@ -236,7 +242,7 @@
       "role": "resident",
       "suburb": "2480",
       "at": "2026-05-06T06:14:45+10:00",
-      "body": "Several near misses \r\nDamage to vehicle \r\nDaily anxiety re access to our property"
+      "body": "Several near misses \nDamage to vehicle \nDaily anxiety re access to our property"
     },
     {
       "name": "Alicia H.",

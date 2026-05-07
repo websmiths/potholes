@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-07T18:28:29+10:00",
-  "total": 38,
+  "generatedAt": "2026-05-07T18:47:10+10:00",
+  "total": 39,
   "byRole": {
     "resident": 28,
     "local": 7,
-    "commuter": 2,
+    "commuter": 3,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 38
+    "2026-05": 39
   },
   "publicNames": [
+    {
+      "name": "Didier M.",
+      "role": "commuter",
+      "suburb": "Dorroughby 2480",
+      "at": "2026-05-07T18:46:54+10:00"
+    },
     {
       "name": "Celine D.",
       "role": "local",
@@ -206,6 +212,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Didier M.",
+      "role": "commuter",
+      "suburb": "Dorroughby 2480",
+      "at": "2026-05-07T18:46:54+10:00",
+      "body": "I have to drive this road on a daily basis as the postie. I the last 3 months my mechanic and I have noticed premature wear and tear on the following: sway bar bushes, under body panels damage, cvboot wear, suspension definitely having a workout but holding so far.\r\n\r\nUnfortunately Aus Post will not pay for this excessive wear and tear.\r\n\r\nAfter contacting council and also notifying road inspectors with no success, with the road condition continuing it’s deterioration, I have decided to deliver once a week as I can’t afford to have my car off the road.\r\n\r\nFriday 15 may will be the next delivery day, parcels arriving between now and then will be available for collection at your post office as per usual."
+    },
     {
       "name": "Celine D.",
       "role": "local",

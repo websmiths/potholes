@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-07T17:11:56+10:00",
-  "total": 37,
+  "generatedAt": "2026-05-07T18:28:29+10:00",
+  "total": 38,
   "byRole": {
     "resident": 28,
-    "local": 6,
+    "local": 7,
     "commuter": 2,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 37
+    "2026-05": 38
   },
   "publicNames": [
+    {
+      "name": "Celine D.",
+      "role": "local",
+      "suburb": "2480",
+      "at": "2026-05-07T18:28:12+10:00"
+    },
     {
       "name": "sandra B.",
       "role": "resident",
@@ -200,6 +206,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Celine D.",
+      "role": "local",
+      "suburb": "2480",
+      "at": "2026-05-07T18:28:12+10:00",
+      "body": "Damnages scared like hell on that road"
+    },
     {
       "name": "Layla T.",
       "role": "local",

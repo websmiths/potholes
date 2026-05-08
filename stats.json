@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-08T17:29:22+10:00",
-  "total": 44,
+  "generatedAt": "2026-05-09T05:02:04+10:00",
+  "total": 45,
   "byRole": {
-    "resident": 29,
+    "resident": 30,
     "local": 7,
     "commuter": 7,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 44
+    "2026-05": 45
   },
   "publicNames": [
+    {
+      "name": "Anthony L.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-09T05:01:50+10:00"
+    },
     {
       "name": "Garry P.",
       "role": "commuter",
@@ -224,6 +230,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Anthony L.",
+      "role": "resident",
+      "suburb": "Rosebank 2480",
+      "at": "2026-05-09T05:01:50+10:00",
+      "body": "I have had major issues with my car due to the terrible continuous if Fox road. Costing thousands of dollars in repairs and rendered one vehicle unusable. The road is a disgrace and those responsible for maintenance and repairs need to be educated on how to ACTUALLY FIX a road. It is extremely frustrating to see how dodgy they are on any repair work. LCC needs to fix this road properly before someone gets killed on this road."
+    },
     {
       "name": "Garry P.",
       "role": "commuter",

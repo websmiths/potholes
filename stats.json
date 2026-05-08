@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-08T08:55:56+10:00",
-  "total": 43,
+  "generatedAt": "2026-05-08T17:29:22+10:00",
+  "total": 44,
   "byRole": {
     "resident": 29,
     "local": 7,
-    "commuter": 6,
+    "commuter": 7,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 43
+    "2026-05": 44
   },
   "publicNames": [
+    {
+      "name": "Garry P.",
+      "role": "commuter",
+      "suburb": "",
+      "at": "2026-05-08T17:29:05+10:00"
+    },
     {
       "name": "Andrea P.",
       "role": "commuter",
@@ -218,6 +224,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Garry P.",
+      "role": "commuter",
+      "suburb": "",
+      "at": "2026-05-08T17:29:05+10:00",
+      "body": "I live on Ridgewood Rd my Son lives on Fox Road.We have the same problem dangerous narrow road with WEEDS incroching on both sides not enough weed control and Pot Holes making our commute hazardous meeting with daily School Buses 🚌 on route .Please can you address this on going safety issue ."
+    },
     {
       "name": "Didier M.",
       "role": "commuter",

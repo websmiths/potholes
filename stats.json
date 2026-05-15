@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-09T05:02:04+10:00",
-  "total": 45,
+  "generatedAt": "2026-05-15T14:17:52+10:00",
+  "total": 46,
   "byRole": {
     "resident": 30,
-    "local": 7,
+    "local": 8,
     "commuter": 7,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 45
+    "2026-05": 46
   },
   "publicNames": [
+    {
+      "name": "Kevin B.",
+      "role": "local",
+      "suburb": "Repentance Creek 2489",
+      "at": "2026-05-15T14:17:41+10:00"
+    },
     {
       "name": "Anthony L.",
       "role": "resident",
@@ -230,6 +236,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Kevin B.",
+      "role": "local",
+      "suburb": "Repentance Creek 2489",
+      "at": "2026-05-15T14:17:41+10:00",
+      "body": "Visiting friend in Fox Road risks damage to my car."
+    },
     {
       "name": "Anthony L.",
       "role": "resident",

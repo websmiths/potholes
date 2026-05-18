@@ -1,17 +1,23 @@
 {
-  "generatedAt": "2026-05-15T14:17:52+10:00",
-  "total": 46,
+  "generatedAt": "2026-05-18T17:16:29+10:00",
+  "total": 47,
   "byRole": {
     "resident": 30,
     "local": 8,
-    "commuter": 7,
+    "commuter": 8,
     "business": 0,
     "other": 1
   },
   "byMonth": {
-    "2026-05": 46
+    "2026-05": 47
   },
   "publicNames": [
+    {
+      "name": "Vicki G.",
+      "role": "commuter",
+      "suburb": "2482",
+      "at": "2026-05-18T17:16:18+10:00"
+    },
     {
       "name": "Kevin B.",
       "role": "local",
@@ -236,6 +242,13 @@
     }
   ],
   "publicStories": [
+    {
+      "name": "Vicki G.",
+      "role": "commuter",
+      "suburb": "2482",
+      "at": "2026-05-18T17:16:18+10:00",
+      "body": "I travel this road weekly to see family and dread it every timre it's so bad."
+    },
     {
       "name": "Kevin B.",
       "role": "local",

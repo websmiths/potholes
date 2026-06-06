@@ -1,18 +1,24 @@
 {
-  "generatedAt": "2026-06-07T07:52:03+10:00",
-  "total": 50,
+  "generatedAt": "2026-06-07T07:56:24+10:00",
+  "total": 51,
   "byRole": {
     "resident": 32,
     "local": 9,
     "commuter": 8,
     "business": 0,
-    "other": 1
+    "other": 2
   },
   "byMonth": {
     "2026-05": 49,
-    "2026-06": 1
+    "2026-06": 2
   },
   "publicNames": [
+    {
+      "name": "Kylie G.",
+      "role": "other",
+      "suburb": "2044",
+      "at": "2026-06-07T07:56:10+10:00"
+    },
     {
       "name": "Glenn G.",
       "role": "resident",
